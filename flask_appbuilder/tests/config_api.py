@@ -1,6 +1,6 @@
 import os
 
-SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
+SQLALCHEMY_DATABASE_URI = "sqlite:///test.db"  # os.environ.get("SQLALCHEMY_DATABASE_URI")
 SECRET_KEY = "thisismyscretkey"
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 WTF_CSRF_ENABLED = False
